@@ -9,6 +9,8 @@ public class Loops_Excercise_01 {
     int count = 0;
     for (int i = 0; i <= 100; i++) {
             System.out.println(i+count);
+            count = count + i;
+
         }
 
 

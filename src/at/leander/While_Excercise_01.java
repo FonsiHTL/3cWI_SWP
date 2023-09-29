@@ -7,27 +7,27 @@ public class While_Excercise_01 {
 
 
         Random random = new Random();
-
+        Random random2 = new Random();
         boolean isFinished = false;
 
 
-
+        int sum = 0;
 
         while (!isFinished){
 
             int randomValue = random.nextInt(10,31 );
-            int randomValue2 = random.nextInt(10, 31);
+            int randomValue2 = random2.nextInt(10, 31);
 
-            int sum = 0;
-            sum += randomValue + randomValue2;
+
+
             System.out.println(randomValue);
             System.out.println(randomValue2);
-            System.out.println(sum);
 
-            if (randomValue == 15 || randomValue == 25){
+            sum += randomValue + randomValue2;
+            if ((randomValue == 15 || randomValue2 == 15)  || (randomValue == 25 || randomValue2 == 25)){
                 isFinished = true;
             }
-
+            System.out.println(sum);
         }
 
 

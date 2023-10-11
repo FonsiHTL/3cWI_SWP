@@ -8,7 +8,7 @@ public class Caesar_Encryption {
         String normaltext = "Servus!";
         int key = 2;
 
-        char[] verschluesselterTextArray = encrypt(klartext.toCharArray(), key);
+        char[] verschluesselterTextArray = encrypt(normaltext.toCharArray(), key);
         String verschluesselterText = new String(verschluesselterTextArray);
         System.out.println("Verschlüsselter Text: " + verschluesselterText);
 

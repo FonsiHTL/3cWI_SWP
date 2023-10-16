@@ -36,14 +36,26 @@ public class String_Helper_01 {
         } else {
             System.out.println("Das Array ist kein Palindrom");
         }
-    public static int countLetters() {
 
-        }
+        String text = "Hello, World!"; // Replace this with your input string
+        int letterCount = countLetters(text);
 
+
+        System.out.println("Number of letters in the string: " + letterCount);
     }
 
-
+    public static int countLetters(String text) {
+        int count = 0;
+        for (int i = 0; i < text.length(); i++) {
+            char c = text.charAt(i);
+            if (Character.isLetter(c)) {
+                count++;
+            }
+        }
+        return count;
+    }
 }
+
 
 
 

@@ -1,17 +1,22 @@
 package at.leander.string.helper;
 
+import javax.naming.PartialResultException;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
 
 public class String_Helper_01 {
 
-    public static boolean isPalindrome() {
+    public static boolean isPalindrome(char[] arr) {
+        for (int i = 0; i < arr.length / 2; i++) {
+            if (arr[i] != arr[arr.length - 1 - i]) {
+                return false;
+            }
+        }
+        return true;
+    }
 
-        Scanner scanner = new Scanner(System.in);
-        boolean running = true;
-
-
+    public static void main(String[] args) {
         char[] arr = {'l', 'a', 'g', 'e', 'r', 'r', 'e', 'g', 'a', 'l'};
 
         System.out.println("arr: ");
@@ -19,42 +24,39 @@ public class String_Helper_01 {
             System.out.print(c + " ");
         }
 
-
-        for (int i = 0; i < arr.length / 2; i++) {
-            if (arr[i] != arr[arr.length - 1 - i]) {
-                return false;
-            }
-        }
-
-        return true;
-
-    }
-
-    public static void main(String[] args) {
-        if (isPalindrome()) {
-            System.out.println("Das Array ist ein Palindrom");
+        if (isPalindrome(arr)) {
+            System.out.print("  <-  Das Array ist ein Palindrom");
         } else {
-            System.out.println("Das Array ist kein Palindrom");
+            System.out.print("  <-  Das Array ist kein Palindrom");
         }
 
-        String text = "Hello, World!"; // Replace this with your input string
-        int letterCount = countLetters(text);
+        int letterCount = countLetters(arr);
 
+        System.out.println("\nNumber of letters in the array: " + letterCount);
 
-        System.out.println("Number of letters in the string: " + letterCount);
+        String reversedString = reverseString(arr);
+        System.out.println("Reversed string: " + reversedString);
     }
 
-    public static int countLetters(String text) {
+    public static int countLetters(char[] arr) {
         int count = 0;
-        for (int i = 0; i < text.length(); i++) {
-            char c = text.charAt(i);
+        for (char c : arr) {
             if (Character.isLetter(c)) {
                 count++;
             }
         }
         return count;
     }
+
+    public static String reverseString(char[] arr) {
+        String reversed = "";
+        for (int i = arr.length - 1; i >= 0; i--) {
+            reversed += arr[i];
+        }
+        return reversed;
+    }
 }
+
 
 
 

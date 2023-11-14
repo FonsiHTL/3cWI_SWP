@@ -4,7 +4,9 @@ public class Car {
     // Gedächtnisvariablen
 
     double fuelConsumption;
-
+    String  color;
+    String serialNumber;
+    String brand;
 
 
 

@@ -37,5 +37,7 @@ public class First_Object_Car_01 {
         System.out.println("Remaining gasoline: " + car.fuelAmount);
         car.break1();
         System.out.println();
+        car.turboBoost();
+        car.honk(4);
     }
 }

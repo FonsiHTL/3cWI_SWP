@@ -8,22 +8,34 @@ public class First_Object_Car_01 {
         c1.fuelConsumption = 7;
         c1.serialNumber = "ABCD123";
         c1.color = "black";
+        c1.fuelAmount = 60;
 
         Car c2 = new Car();
         c2.brand = "BMW";
         c2.fuelConsumption = 6;
         c2.serialNumber = "1234AB";
         c2.color = "blue";
+        c2.fuelAmount = 56;
 
         printCarDetails(c1);
         printCarDetails(c2);
+
+
     }
 
+
+
     public static void printCarDetails(Car car) {
+
+
         System.out.println("Serial Number: " + car.serialNumber);
         System.out.println("Brand: " + car.brand);
         System.out.println("Fuel Consumption: " + car.fuelConsumption);
         System.out.println("Color: " + car.color);
+        System.out.println("Remaining gasoline: " + car.fuelAmount);
+        car.drive();
+        System.out.println("Remaining gasoline: " + car.fuelAmount);
+        car.break1();
         System.out.println();
     }
 }

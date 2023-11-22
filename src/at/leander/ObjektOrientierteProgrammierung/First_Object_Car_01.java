@@ -39,5 +39,8 @@ public class First_Object_Car_01 {
         System.out.println();
         car.turboBoost();
         car.honk(4);
+        System.out.println("Remaining range: " + car.getRemainingRange());
+        System.out.println();
+        System.out.println();
     }
 }

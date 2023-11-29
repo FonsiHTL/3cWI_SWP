@@ -10,7 +10,7 @@ public class Car {
     private double fuelAmount;
     private double amountFuelIntoMotor;
 
-    /*
+
     public Car(int fuelConsumption, String brand, String serialNumber, double fuelAmount, String color) {
         this.fuelConsumption = fuelConsumption;
         this.brand = brand;
@@ -20,7 +20,8 @@ public class Car {
 
     }
 
-     */
+
+
 
     public void drive() {
         this.fuelAmount = this.fuelAmount - fuelConsumption;

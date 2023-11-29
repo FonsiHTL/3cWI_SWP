@@ -3,12 +3,20 @@ package at.leander.ObjektOrientierteProgrammierung;
 public class Car {
     // Gedächtnisvariablen
 
-    double fuelConsumption;
-    String color;
-    String serialNumber;
-    String brand;
-    double fuelAmount;
+    public double fuelConsumption;
+    public String color;
+    public String serialNumber;
+    public String brand;
+    public double fuelAmount;
 
+    public Car(int fuelConsumption, String brand, String serialNumber, double fuelAmount, String color) {
+        this.fuelConsumption = fuelConsumption;
+        this.brand = brand;
+        this.serialNumber = serialNumber;
+        this.fuelAmount = fuelAmount;
+        this.color = color;
+
+    }
 
     public void drive() {
         this.fuelAmount = this.fuelAmount - fuelConsumption;

@@ -3,6 +3,8 @@ package at.leander.ObjektOrientierteProgrammierung;
 public class First_Object_Car_01 {
 
     public static void main(String[] args) {
+
+        /*
         Car c1 = new Car();
         c1.brand = "Mercedes";
         c1.fuelConsumption = 7;
@@ -17,10 +19,18 @@ public class First_Object_Car_01 {
         c2.color = "blue";
         c2.fuelAmount = 56;
 
+
         printCarDetails(c1);
         printCarDetails(c2);
+         */
 
 
+
+        Car c3 = new Car( 10, "Toyota", "1234A", 90, "Black");
+
+
+
+        printCarDetails(c3);
     }
 
 

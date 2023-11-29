@@ -4,14 +4,17 @@ public class First_Object_Car_01 {
 
     public static void main(String[] args) {
 
-        /*
-        Car c1 = new Car();
-        c1.brand = "Mercedes";
-        c1.fuelConsumption = 7;
-        c1.serialNumber = "ABCD123";
-        c1.color = "black";
-        c1.fuelAmount = 60;
 
+        Car c1 = new Car();
+        c1.setBrand("Audi");
+        c1.setFuelConsumption(7);
+        c1.setSerialNumber("1234A");
+        c1.setColor("black");
+        c1.setFuelAmount(70);
+
+
+        printCarDetails(c1);
+        /*
         Car c2 = new Car();
         c2.brand = "BMW";
         c2.fuelConsumption = 6;
@@ -20,9 +23,8 @@ public class First_Object_Car_01 {
         c2.fuelAmount = 56;
 
 
-        printCarDetails(c1);
+
         printCarDetails(c2);
-         */
 
 
 
@@ -31,6 +33,8 @@ public class First_Object_Car_01 {
 
 
         printCarDetails(c3);
+
+         */
     }
 
 
@@ -38,13 +42,13 @@ public class First_Object_Car_01 {
     public static void printCarDetails(Car car) {
 
 
-        System.out.println("Serial Number: " + car.serialNumber);
-        System.out.println("Brand: " + car.brand);
-        System.out.println("Fuel Consumption: " + car.fuelConsumption);
-        System.out.println("Color: " + car.color);
-        System.out.println("Remaining gasoline: " + car.fuelAmount);
+        System.out.println("Serial Number: " + car.getSerialNumber());
+        System.out.println("Brand: " + car.getBrand());
+        System.out.println("Fuel Consumption: " + car.getFuelConsumption());
+        System.out.println("Color: " + car.getColor());
+        System.out.println("Remaining gasoline: " + car.getFuelAmount());
         car.drive();
-        System.out.println("Remaining gasoline: " + car.fuelAmount);
+        System.out.println("Remaining gasoline: " + car.getFuelAmount());
         car.break1();
         System.out.println();
         car.turboBoost();

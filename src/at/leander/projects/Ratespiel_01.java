@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Ratespiel_01 {
 
-
     public static void main(String[] args) {
 
         String[] words = {"simon", "eric", "leander", "jonas", "lukas", "samuel", "peter", "tobias", "raphael"};
@@ -17,7 +16,7 @@ public class Ratespiel_01 {
         boolean isFinished = false;
 
         Scanner scanner = new Scanner(System.in);
-
+        System.out.println("Hallo HTL Dorbirn, Liebe Grüße Elina");
         System.out.println("Willkommen zum Wörter-Ratespiel!");
         System.out.print("Aktuelles Wort: ");
 

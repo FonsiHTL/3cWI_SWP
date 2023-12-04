@@ -4,16 +4,18 @@ public class First_Object_Car_01 {
 
     public static void main(String[] args) {
 
+        Engine engine = new Engine(150, Engine.TYPE.DIESEL);
+        printEngineDetails(engine);
 
-        Car c1 = new Car(8, "Audi", "1234A", 85, "green");
+        Car c1 = new Car(8, "Audi", "1234A", 85, "green", engine);
         printCarDetails(c1);
 
 
-        Car c2 = new Car(7, "Mercedes", "223A", 70, "yellow");
+        Car c2 = new Car(7, "Mercedes", "223A", 70, "yellow", engine);
         printCarDetails(c2);
 
 
-        Car c3 = new Car( 10, "Toyota", "1234A", 90, "black");
+        Car c3 = new Car( 10, "Toyota", "1234A", 90, "black", engine);
         printCarDetails(c3);
 
 
@@ -38,5 +40,10 @@ public class First_Object_Car_01 {
         System.out.println("Remaining range: " + car.getRemainingRange());
         System.out.println();
         System.out.println();
+    }
+
+    public static void printEngineDetails(Engine engine) {
+        System.out.println("Horsepower: " + engine.getHorsePower());
+        System.out.println("Gas Type: " + engine.getGasType());
     }
 }

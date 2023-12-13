@@ -49,6 +49,6 @@ public class Engine {
         } else {
             System.out.println("Not enough fuel to drive");
         }
-        System.out.println("Remaining Fuel: " + remainingFuel);
+
     }
 }

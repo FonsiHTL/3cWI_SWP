@@ -5,24 +5,32 @@ public class First_Object_Car_01 {
     public static void main(String[] args) {
 
         Tank tank = new Tank(8, 94);
-        printTankDetails(tank);
+
 
         Engine engine = new Engine(150, Engine.TYPE.DIESEL, tank);
         printEngineDetails(engine);
+        printTankEngineDetails(tank, engine);
 
-        Car c1 = new Car("Audi", "1234A", "green", engine);
+        Car c1 = new Car("Audi", "1234A", "green", engine, tank);
         printCarDetails(c1);
+        printEngineDetails(engine);
+        printTankEngineDetails(tank, engine);
 
 
-        Car c2 = new Car("Mercedes", "223A", "yellow", engine);
+        Car c2 = new Car("Mercedes", "223A", "yellow", engine, tank);
         printCarDetails(c2);
+        printEngineDetails(engine);
+        printTankEngineDetails(tank, engine);
 
 
-        Car c3 = new Car("Toyota", "1234A", "black", engine);
+        Car c3 = new Car("Toyota", "1234A", "black", engine, tank);
         printCarDetails(c3);
+        printEngineDetails(engine);
+        printTankEngineDetails(tank, engine);
 
 
     }
+
 
 
     public static void printCarDetails(Car car) {
@@ -46,11 +54,13 @@ public class First_Object_Car_01 {
 
     }
 
-    public static void printTankDetails(Tank tank) {
+    public static void printTankEngineDetails(Tank tank, Engine engine) {
         System.out.println("Fuel Consumption: " + tank.getFuelConsumption());
         System.out.println("Remaining gasoline: " + tank.getFuelAmount());
         System.out.println("Remaining range: " + tank.getRemainingRange());
         tank.turboBoost();
+        engine.drive();
+        System.out.println("Remaining gasoline: " + tank.getFuelAmount());
 
     }
 }

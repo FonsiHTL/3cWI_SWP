@@ -4,7 +4,7 @@ public class Tank {
 
     public enum TYPE {DIESEL, GAS}
 
-    ;
+
 
     public double fuelConsumption;
 
@@ -30,11 +30,10 @@ public class Tank {
 
     public double getFuelAmount() {
         if (fuelAmount > 100) {
-            this.fuelAmount = 100;
+            return 100;
         } else {
-            this.fuelAmount = fuelAmount;
+            return fuelAmount;
         }
-        return fuelAmount;
     }
 
 

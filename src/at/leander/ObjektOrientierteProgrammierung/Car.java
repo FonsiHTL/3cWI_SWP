@@ -14,7 +14,7 @@ public class Car {
     private double amountFuelIntoMotor;
 
 
-    public Car( String brand, String serialNumber, String color, Engine engine) {
+    public Car( String brand, String serialNumber, String color, Engine engine, Tank tank) {
 
 
         this.brand = brand;
@@ -22,6 +22,7 @@ public class Car {
 
         this.color = color;
         this.engine = engine;
+        this.tank = tank;
 
     }
 

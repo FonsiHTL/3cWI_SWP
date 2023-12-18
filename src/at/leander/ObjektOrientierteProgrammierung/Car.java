@@ -14,7 +14,7 @@ public class Car {
     private double amountFuelIntoMotor;
 
 
-    public Car( String brand, String serialNumber, String color, Engine engine, Tank tank) {
+    public Car(String brand, String serialNumber, String color, Engine engine, Tank tank) {
 
 
         this.brand = brand;
@@ -27,16 +27,10 @@ public class Car {
     }
 
 
-
-
-
-
     public void break1() {
         System.out.println("Kicking in the break");
 
     }
-
-
 
 
     public void honk(int amountOfRepetitions) {
@@ -44,7 +38,6 @@ public class Car {
             System.out.println("Tuuut");
         }
     }
-
 
 
     public void setAmountFuelIntoMotor(double amountFuelIntoMotor) {
@@ -65,9 +58,6 @@ public class Car {
     }
 
 
-
-
-
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
@@ -75,8 +65,6 @@ public class Car {
     public double getAmountFuelIntoMotor() {
         return amountFuelIntoMotor;
     }
-
-
 
 
     public String getBrand() {

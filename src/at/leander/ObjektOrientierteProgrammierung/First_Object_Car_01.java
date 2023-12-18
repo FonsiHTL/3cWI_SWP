@@ -8,29 +8,28 @@ public class First_Object_Car_01 {
 
 
         Engine engine = new Engine(150, Engine.TYPE.DIESEL, tank);
-        printEngineDetails(engine);
+
         printTankEngineDetails(tank, engine);
 
         Car c1 = new Car("Audi", "1234A", "green", engine, tank);
         printCarDetails(c1);
-        printEngineDetails(engine);
+
         printTankEngineDetails(tank, engine);
 
 
         Car c2 = new Car("Mercedes", "223A", "yellow", engine, tank);
         printCarDetails(c2);
-        printEngineDetails(engine);
+
         printTankEngineDetails(tank, engine);
 
 
         Car c3 = new Car("Toyota", "1234A", "black", engine, tank);
         printCarDetails(c3);
-        printEngineDetails(engine);
+
         printTankEngineDetails(tank, engine);
 
 
     }
-
 
 
     public static void printCarDetails(Car car) {
@@ -47,20 +46,17 @@ public class First_Object_Car_01 {
         System.out.println();
     }
 
-    public static void printEngineDetails(Engine engine) {
-        System.out.println("Horsepower: " + engine.getHorsePower());
-        System.out.println("Gas Type: " + engine.getGasType());
-        engine.drive();
-
-    }
 
     public static void printTankEngineDetails(Tank tank, Engine engine) {
         System.out.println("Fuel Consumption: " + tank.getFuelConsumption());
         System.out.println("Remaining gasoline: " + tank.getFuelAmount());
         System.out.println("Remaining range: " + tank.getRemainingRange());
         tank.turboBoost();
-        engine.drive();
+        engine.drive(70);
         System.out.println("Remaining gasoline: " + tank.getFuelAmount());
+        System.out.println("Horsepower: " + engine.getHorsePower());
+        System.out.println("Gas Type: " + engine.getGasType());
+        engine.drive(70);
 
     }
 }

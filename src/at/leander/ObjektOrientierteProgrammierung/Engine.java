@@ -38,17 +38,21 @@ public class Engine {
         this.tank = tank;
     }
 
-    public void drive() {
+    public void drive(int speed) {
         double fuelConsumption = tank.getFuelConsumption();
         double remainingFuel = tank.getFuelAmount();
 
 
-        if (remainingFuel >= fuelConsumption) {
-            tank.setFuelAmount(remainingFuel - fuelConsumption);
-            System.out.println("I am driving");
+        double requiredFuel = fuelConsumption * speed / 100.0;
+
+        if (remainingFuel >= requiredFuel) {
+            tank.setFuelAmount(remainingFuel - requiredFuel);
+            System.out.println("I am driving at speed: " + speed);
         } else {
-            System.out.println("Not enough fuel to drive");
+            System.out.println("Not enough fuel to drive at speed: " + speed);
         }
 
+
     }
+
 }

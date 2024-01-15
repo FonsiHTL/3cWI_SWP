@@ -1,5 +1,7 @@
 package at.leander.ObjektOrientierteProgrammierung;
 
+import java.util.ArrayList;
+
 public class Car {
     // Gedächtnisvariablen
 
@@ -10,7 +12,7 @@ public class Car {
     private String color;
     private String serialNumber;
     private String brand;
-
+    private ArrayList<RearMirror> mirrors = new ArrayList<>();
     private double amountFuelIntoMotor;
 
 
@@ -37,6 +39,14 @@ public class Car {
         for (int i = 0; i < amountOfRepetitions; i++) {
             System.out.println("Tuuut");
         }
+    }
+
+    public void addMirror(RearMirror rearMirror){
+        this.mirrors.add(rearMirror);
+    }
+
+    public ArrayList<RearMirror> getMirrors() {
+        return mirrors;
     }
 
 

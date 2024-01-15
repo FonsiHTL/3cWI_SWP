@@ -11,10 +11,20 @@ public class First_Object_Car_01 {
 
         printTankEngineDetails(tank, engine);
 
+        RearMirror r1 = new RearMirror(100,0);
+        RearMirror r2 = new RearMirror(100,-40);
         Car c1 = new Car("Audi", "1234A", "green", engine, tank);
         printCarDetails(c1);
 
         printTankEngineDetails(tank, engine);
+
+
+
+        c1.addMirror(r1);
+        c1.addMirror(r2);
+
+        System.out.println(c1.getMirrors().get(0).getPosition());
+        System.out.println();
 
 
         Car c2 = new Car("Mercedes", "223A", "yellow", engine, tank);

@@ -16,8 +16,8 @@ public class First_Object_Car_01 {
         Wheels w3 = new Wheels(215, 65, Wheels.TYPE.WINTERWHEEL);
         Wheels w4 = new Wheels(215, 65, Wheels.TYPE.WINTERWHEEL);
 
-        RearMirror r1 = new RearMirror(100,0);
-        RearMirror r2 = new RearMirror(100,-40);
+        RearMirror r1 = new RearMirror(100, 0);
+        RearMirror r2 = new RearMirror(100, -40);
         Car c1 = new Car("Audi", "1234A", "green", engine, tank);
         printCarDetails(c1);
 

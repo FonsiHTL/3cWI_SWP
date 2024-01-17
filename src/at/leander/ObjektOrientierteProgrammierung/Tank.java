@@ -5,7 +5,6 @@ public class Tank {
     public enum TYPE {DIESEL, GAS}
 
 
-
     public double fuelConsumption;
 
     public double fuelAmount;

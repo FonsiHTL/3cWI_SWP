@@ -5,9 +5,11 @@ public class Wheels {
     private int diameter;
     private int width;
 
-    public enum TYPE {WINTERWHEEL, SUMMERWHEEL};
+    public enum TYPE {WINTERWHEEL, SUMMERWHEEL}
 
-    private TYPE  wheelType;
+    ;
+
+    private TYPE wheelType;
 
     public Wheels(int diameter, int width, TYPE wheelType) {
         this.diameter = diameter;

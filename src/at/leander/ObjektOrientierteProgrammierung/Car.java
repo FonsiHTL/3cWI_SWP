@@ -41,7 +41,7 @@ public class Car {
         }
     }
 
-    public void addMirror(RearMirror rearMirror){
+    public void addMirror(RearMirror rearMirror) {
         this.mirrors.add(rearMirror);
     }
 
@@ -50,9 +50,10 @@ public class Car {
     }
 
 
-    public void addWheel(Wheels wheels){
+    public void addWheel(Wheels wheels) {
         this.wheels.add(wheels);
     }
+
     public ArrayList<Wheels> getWheels() {
         return wheels;
     }

@@ -13,6 +13,7 @@ public class Car {
     private String serialNumber;
     private String brand;
     private ArrayList<RearMirror> mirrors = new ArrayList<>();
+    private ArrayList<Wheels> wheels = new ArrayList<>();
     private double amountFuelIntoMotor;
 
 
@@ -21,7 +22,6 @@ public class Car {
 
         this.brand = brand;
         this.serialNumber = serialNumber;
-
         this.color = color;
         this.engine = engine;
         this.tank = tank;
@@ -49,6 +49,13 @@ public class Car {
         return mirrors;
     }
 
+
+    public void addWheel(Wheels wheels){
+        this.wheels.add(wheels);
+    }
+    public ArrayList<Wheels> getWheels() {
+        return wheels;
+    }
 
     public void setAmountFuelIntoMotor(double amountFuelIntoMotor) {
         this.amountFuelIntoMotor = amountFuelIntoMotor;

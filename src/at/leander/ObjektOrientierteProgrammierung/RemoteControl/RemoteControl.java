@@ -28,7 +28,7 @@ public class RemoteControl {
 
     public void turnOff() {
         for (Battery battery : batteries) {
-            battery.turnOn();
+            battery.turnOff();
         }
         this.isOn = TYPE.NO;
     }
@@ -45,9 +45,6 @@ public class RemoteControl {
         this.batteries.add(Battery);
     }
 
-    public ArrayList<Battery> getBatteries() {
-        return batteries;
-    }
 
     public void setBatteries(ArrayList<Battery> batteries) {
         this.batteries = batteries;

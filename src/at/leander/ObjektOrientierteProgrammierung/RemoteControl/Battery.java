@@ -15,10 +15,12 @@ public class Battery {
 
     public void turnOn() {
         chargingStatus -= 5;
+        System.out.println("Turn on");
         System.out.println("Verbraucher angeschlossen");
     }
 
-    public void turnoff(){
+    public void turnOff()   {
+        System.out.println("Turn off");
         System.out.println("Kein Verbraucher angeschlossen");
     }
 

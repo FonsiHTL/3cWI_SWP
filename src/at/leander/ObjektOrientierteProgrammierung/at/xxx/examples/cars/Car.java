@@ -1,7 +1,7 @@
 package at.leander.ObjektOrientierteProgrammierung.at.xxx.examples.cars;
 
-import at.leander.ObjektOrientierteProgrammierung.Engine;
-import at.leander.ObjektOrientierteProgrammierung.Tank;
+
+
 
 public class Car {
 
@@ -19,9 +19,15 @@ public class Car {
         this.engine = engine;
         this.producer = producer;
         this.basePrice = basePrice;
+
         this.color = color;
         this.maxSpeed = maxSpeed;
         this.baseFuelConsumption = baseFuelConsumption;
+    }
+
+    double realPrice() {
+        double discountInEuro = basePrice * (producer.producerDiscount / 100);
+        return basePrice - discountInEuro;
     }
 
     public Engine getEngine() {
@@ -61,6 +67,10 @@ public class Car {
     public void setBasePrice(int basePrice) {
         this.basePrice = basePrice;
     }
+
+
+
+
 
     public void setColor(String color) {
         this.color = color;

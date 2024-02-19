@@ -3,7 +3,7 @@ package at.leander.ObjektOrientierteProgrammierung.at.xxx.examples.cars;
 public class Producer {
     private String producerCountry;
     private String producerName;
-    private int producerDiscount;
+    public double producerDiscount;
 
     public Producer(String producerCountry, String producerName, int producerDiscount) {
         this.producerCountry = producerCountry;
@@ -19,7 +19,7 @@ public class Producer {
         return producerName;
     }
 
-    public int getProducerDiscount() {
+    public double getProducerDiscount() {
         return producerDiscount;
     }
 
@@ -31,7 +31,7 @@ public class Producer {
         this.producerName = producerName;
     }
 
-    public void setProducerDiscount(int producerDiscount) {
+    public void setProducerDiscount(double producerDiscount) {
         this.producerDiscount = producerDiscount;
     }
 }

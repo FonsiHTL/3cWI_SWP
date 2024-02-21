@@ -11,27 +11,46 @@ public class Car {
     private String color;
 
 
-
+    private int distanceTraveled;
     private int maxSpeed;
     private int baseFuelConsumption;
 
-    public Car(Engine engine, Producer producer, int basePrice, String color, int maxSpeed, int baseFuelConsumption) {
+    public Car(Engine engine, Producer producer, int basePrice, String color, int maxSpeed, int baseFuelConsumption, int distanceTraveled) {
         this.engine = engine;
         this.producer = producer;
         this.basePrice = basePrice;
-
+        this.distanceTraveled = distanceTraveled;
         this.color = color;
         this.maxSpeed = maxSpeed;
         this.baseFuelConsumption = baseFuelConsumption;
+
     }
 
     double realPrice() {
         double discountInEuro = basePrice * (producer.producerDiscount / 100);
         return basePrice - discountInEuro;
+
+    }
+
+    public double calculateFuelConsumption() {
+        if (distanceTraveled <= 50000) {
+            return baseFuelConsumption;
+        } else {
+            double increasedFuelConsumption = baseFuelConsumption + (baseFuelConsumption* 0.098) ;
+            return increasedFuelConsumption;
+        }
     }
 
     public Engine getEngine() {
         return engine;
+    }
+
+    public int getDistanceTraveled() {
+        return distanceTraveled;
+    }
+
+    public void setDistanceTraveled(int distanceTraveled) {
+        this.distanceTraveled = distanceTraveled;
     }
 
     public Producer getProducer() {

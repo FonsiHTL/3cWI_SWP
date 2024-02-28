@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Lamp {
 
     private ArrayList<LightElement> lightElements;
-    private int overallPowerUsage;
+    private double overallPowerUsage;
 
    public Lamp (){
         lightElements = new ArrayList<>();

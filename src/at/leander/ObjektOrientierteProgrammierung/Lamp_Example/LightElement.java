@@ -13,7 +13,21 @@ public class LightElement {
         this.color = color;
         this.powerConsumption = powerConsumption;
         this.turnedOn = turnedOn;
+
     }
+
+    public void turnOn() {
+        if (!turnedOn) {
+            turnedOn = true;
+            System.out.println("Mein Name ist: " + name + "Ich wurde so eben eingeschaltet");
+        } else {
+            System.out.println("Mein Name ist: " + name + "Ich bin bereits eingeschaltet");
+
+        }
+
+        powerConsumption =+ 5;
+    }
+
 
     public String getName() {
         return name;

@@ -19,9 +19,11 @@ public class LightElement {
     public void turnOn() {
         if (!turnedOn) {
             turnedOn = true;
-            System.out.println("Mein Name ist: " + name + "Ich wurde so eben eingeschaltet");
+            System.out.println("Mein Name ist: " + name + " Ich wurde so eben eingeschaltet");
+            System.out.println();
         } else {
-            System.out.println("Mein Name ist: " + name + "Ich bin bereits eingeschaltet");
+            System.out.println("Mein Name ist: " + name + " Ich bin bereits eingeschaltet");
+            System.out.println();
 
         }
 

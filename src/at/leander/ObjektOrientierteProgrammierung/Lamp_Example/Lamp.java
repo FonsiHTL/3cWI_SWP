@@ -30,9 +30,14 @@ public class Lamp {
 
     public void printNamesOfLightElements() {
         System.out.println("Names of Light Elements:");
-        for (LightElement lightElement : lightElements) {
+        for (LightElement lightElement:
+                lightElements) {
             System.out.println(lightElement.getName());
         }
 
-    }
+
+
+        }
+
+
 }

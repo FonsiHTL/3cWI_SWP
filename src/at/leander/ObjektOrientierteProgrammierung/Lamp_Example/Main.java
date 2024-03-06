@@ -6,7 +6,7 @@ public class Main {
         Lamp lamp = new Lamp();
 
         LightElement lightElement1 = new LightElement("Element1", "Red", 20, false);
-        LightElement lightElement2 = new LightElement("Element2", "Green", 18, false);
+        LightElement lightElement2 = new LightElement("Element2", "Green", 30, false);
 
         lamp.addLightElement(lightElement1);
         lamp.addLightElement(lightElement2);

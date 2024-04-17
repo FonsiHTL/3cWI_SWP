@@ -1,7 +1,5 @@
 package at.leander.ObjektOrientierteProgrammierung.Test;
 
-import java.sql.SQLOutput;
-
 public class Passenger {
 
     private String firstname;
@@ -15,8 +13,10 @@ public class Passenger {
 
 
 
-    public void inform(){
+    public String inform(String info){
         System.out.println(this.firstname + this.lastname + "Ich wurde informiert");
+
+        return null;
     }
 
     public String getFirstname() {

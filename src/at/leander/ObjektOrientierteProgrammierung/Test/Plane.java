@@ -24,8 +24,11 @@ public class Plane {
         System.out.println(this.getPassengers());
     }
 
-    public void informPeopleonAllPlane(){
-
+    public void informPassengers(String Info){
+        for (Passenger passengers:passengers) {
+            System.out.println("Wichtige Nachricht");
+            passengers.inform(Info);
+        }
     }
 
     public String getName() {

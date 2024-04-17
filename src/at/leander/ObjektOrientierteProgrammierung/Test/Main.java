@@ -11,8 +11,15 @@ public class Main {
         P1.addPassenger(passenger2);
 
         Traffic_Controller T1 = new Traffic_Controller();
+
+        T1.addPlanes(P1);
         T1.printAllPlanes();
 
+        T1.informPeopleOnAllPlanes("Guten Flug");
+        System.out.println();
+        System.out.println(passenger1.getFirstname());
+
+        System.out.println(passenger1.inform("Info"));
         System.out.println(T1.printAllPlanes());
 
         System.out.println(P1.getPassengers());

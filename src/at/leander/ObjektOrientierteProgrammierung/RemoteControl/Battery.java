@@ -5,7 +5,7 @@ public class Battery {
     private int chargingStatus;
 
     public Battery(){
-        this.chargingStatus = 100;
+        this.chargingStatus = 1000;
     }
 
 

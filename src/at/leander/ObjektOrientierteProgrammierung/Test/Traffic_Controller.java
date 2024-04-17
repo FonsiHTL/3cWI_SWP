@@ -10,7 +10,10 @@ public class Traffic_Controller {
 
     private ArrayList<Plane> planes = new ArrayList<>();
 
+    public void addPlanes(Plane plane) {
+        this.planes.add(plane);
 
+    }
     public String printAllPlanes() {
         List<Plane> planeList = this.planes;
         for (Plane plane : planes
@@ -20,11 +23,12 @@ public class Traffic_Controller {
         return planeList.toString();
     }
 
-    public void informPeopleOfAllPlanes(){
-        System.out.println("Neue Information");
+    public void informPeopleOnAllPlanes(String Info) {
+
+        for (Plane planes : planes) {
+            System.out.println("Wichtige Nachricht:");
+            planes.informPassengers("");
+        }
 
     }
-
-
-
 }

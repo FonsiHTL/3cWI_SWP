@@ -13,10 +13,10 @@ public class Passenger {
 
 
 
-    public String inform(String info){
-        System.out.println(this.firstname + this.lastname + "Ich wurde informiert");
+    public void inform(String message){
+        System.out.println(this.firstname + "" + this.lastname + " Ich wurde informiert! " + "" + "Traffic Tower: " + message);
 
-        return null;
+
     }
 
     public String getFirstname() {

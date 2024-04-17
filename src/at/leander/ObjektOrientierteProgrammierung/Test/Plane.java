@@ -21,13 +21,12 @@ public class Plane {
 
     public void addPassenger(Passenger passenger) {
         this.passengers.add(passenger);
-        System.out.println(this.getPassengers());
+
     }
 
-    public void informPassengers(String Info){
-        for (Passenger passengers:passengers) {
-            System.out.println("Wichtige Nachricht");
-            passengers.inform(Info);
+    public void informPassengers(String message){
+        for (Passenger passengers: this.passengers) {
+            passengers.inform(message);
         }
     }
 

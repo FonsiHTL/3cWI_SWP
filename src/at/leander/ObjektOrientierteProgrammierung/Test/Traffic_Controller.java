@@ -14,20 +14,16 @@ public class Traffic_Controller {
         this.planes.add(plane);
 
     }
-    public String printAllPlanes() {
-        List<Plane> planeList = this.planes;
-        for (Plane plane : planes
-        ) {
-            System.out.println(planeList);
+    public void printAllPlanes() {
+        for (Plane plane : planes) {
+            System.out.println(plane.getName());
         }
-        return planeList.toString();
+
     }
 
-    public void informPeopleOnAllPlanes(String Info) {
-
+    public void informPeopleOnAllPlanes(String message) {
         for (Plane planes : planes) {
-            System.out.println("Wichtige Nachricht:");
-            planes.informPassengers("");
+            planes.informPassengers(message);
         }
 
     }
